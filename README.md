@@ -64,7 +64,7 @@ flim_data_stack, intensity_image = ptu_file.get_flim_data_stack()
 # plt.colorbar()
 ```
 
-## Plot and Play ▶
+## Plot & Play ▶
 - Please see Jupyter notebook for implementation
 - Once the FLIM data stack is loaded, one could create custom gui for performing all sort of FLIM analysis routines as needed.
 - As an example a simple intensity image is plotted 
