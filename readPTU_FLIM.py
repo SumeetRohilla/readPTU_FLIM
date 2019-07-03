@@ -384,8 +384,10 @@ class PTUreader():
 
         # Fill in the correct sync values for overflow location    
         #sync[np.where(index == 1)] = 1 # assert values of sync = 1 just right after overflow to avoid any overflow-correction instability in next step
-
-        sync    = sync + (WRAPAROUND*np.cumsum(index)) # correction for overflow to sync varibale
+        if record_type in ['rtHydraHarp2T3','rtTimeHarp260PT3']:
+            sync    = sync + (WRAPAROUND*np.cumsum(index*sync)) # For HydraHarp V1 and TimeHarp260 V1 overflow corrections 
+        else:
+            sync    = sync + (WRAPAROUND*np.cumsum(index)) # correction for overflow to sync varibale
 
         sync     = np.delete(sync, np.where(index == 1), axis = 0)
         tcspc    = np.delete(tcspc, np.where(index == 1), axis = 0)
