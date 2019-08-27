@@ -26,8 +26,9 @@ import pyplot as plt
 FLIM data was acquired using a PicoHarp (T3 mode) <br>
 Exctiation Laser light: 485 nm<br>
 Number of Detection Channels: 2<br/><br/>
-- At the moment, PTUreader library contains implementation for reading imaging data from laser beam scanner (LSM) units.<br/><br/> 
-- <u>**Readability for PTU/TTTR data acquired using Piezo Scanner not implemented YET!**<u> <br/><br/>
+- At the moment, PTUreader library contains implementation for reading imaging data from scanner types: 
+  - laser beam scanner (LSM) 
+  - Piezo scanner
 
 ## Select a PTU file
 ```python
@@ -70,3 +71,6 @@ flim_data_stack, intensity_image = ptu_file.get_flim_data_stack()
 - As an example a simple intensity image is plotted 
 - User can investigate the fluorescence decays after drawing a rectangle on the intensity image <br/>
 ![Interactive Demo Snapshot](Test_FLIM_image_daisyPollen_PicoHarp_2.png)
+
+## Updates
+- 27 Aug, 2019: Piezo Scanner data readability added to the library
