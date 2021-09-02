@@ -22,7 +22,7 @@ import pyplot as plt
 ## Use case
 - As an example, first we import the readPTU_FLIM library. Then we should open the PTU file using a PTUreader() object. By constructing a PTUreader() object, automatically opens the file, reads the PTU file header and TTTR data in raw format. PTU file header contains important measurement information (PQ TCSPC unit, laser/pulse sync rate, FLIM record type, scanner type, etc.)<br/><br/> 
 - **Test_FLIM_image_daisyPollen_PicoHarp_2.ptu**<br> 
-[Download the test file here](https://drive.google.com/file/d/1bbtw0rZQk8HHlp8SYQlvMpdzuEEFIAZL/edit)
+[Download the test file here](https://drive.google.com/file/d/1XtGL2yh_hJhaXIJhEDD5BpHNQXYQZX_p/view?usp=sharing)
 FLIM data was acquired using a PicoHarp (T3 mode) <br>
 Exctiation Laser light: 485 nm<br>
 Number of Detection Channels: 2<br/><br/>
