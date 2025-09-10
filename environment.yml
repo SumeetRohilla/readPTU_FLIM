@@ -1,0 +1,25 @@
+name: ptu_flim
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - numpy
+  - matplotlib
+  - scipy
+  - numba
+  - scikit-learn
+  - pandas
+  - tqdm
+  - fast-histogram
+  - scikit-optimize
+  - lmfit
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pip
+  - pip:
+    - setuptools>=65.0
+    - pip>=22.0
+    - cupy-core
+    - plantseg
